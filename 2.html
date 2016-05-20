@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>translation web</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="static/js/md5.js"></script>
+    <link rel="stylesheet" href="static/css/mystyle.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Translation<small id = "time"></small></h3> 
+            
+         </div>
+        <div class="form-group">
+            <i id="img2"></i>
+            <div class="input-group">
+                <input type="text" id="wordText" class="form-control" value="请输入要翻译的内容" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入要翻译的内容';}"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-success" id="subText">查询</button>
+                </span>
+            </div>
+            <div></div>
+            <div>
+                <form>
+                <label class="radio-inline"><input type="radio" name="optradio" id = "baidu" checked>百度翻译</label>
+                <label class="radio-inline"><input type="radio" name="optradio" id = "youdao">有道翻译</label>
+                
+                </form>
+            </div>
+        </div>
+        <div id="Translation">
+            <P>释义：</P>
+            <p id="Trans" style="font-family:'Microsoft YaHei'"></p>
+        </div>
+        <br>
+        <br>
+        <div id="Sentence">
+            <p id="S"></p>
+        </div>
+    </div>
+</body>
+<script src="static/js/fanyi.js"></script>
+<script src="static/js/time and sentence.js"></script>
+
+</html>
